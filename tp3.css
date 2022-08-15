@@ -1,0 +1,13 @@
+span{
+    color: red;
+
+}
+fieldset{
+    width: 45%;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+td{
+    width: 200px;
+    padding: 10px;
+}
