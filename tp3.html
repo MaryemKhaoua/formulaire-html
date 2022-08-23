@@ -5,8 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="tp3.css">
+        <script defer src="tp3.js"></script>
     </head>
     <body>
+        <section>
         <form> 
             <fieldset> 
                 
@@ -14,19 +16,29 @@
                 <table>
                     <tr>
                         <td><label>Nom</label><span>⁎</span></td>
-                        <td><input type="text"></td>
+                        <td><input type="text" name="nom"></td>
                     </tr>
     
                 <tr>
                     
                     <td> <label> Prénom </label><span> *</span></td>
-                        <td><input type="text"></td>
+                        <td><input type="text" name="prenom"></td>
+                    
+                </tr>
+                <tr>
+                    
+                    <td> <label> Date de naissance </label><span> *</span></td>
+                        <td><input type="jour" name="jour" size="3" placeholder="jj">
+                            <input type="mois" name="mois" size="3" placeholder="mm">
+                            <input type="année" name="année" size="3" placeholder="aaaa">
+                        
+                        </td>
                     
                 </tr>
                 <tr>
                     
                     <td>  <label> Code Postal </label><span> *</span></td>
-                    <td>  <input type="number"></td>
+                    <td>  <input type="code" name="codeP"></td>
                 
                 </tr>
                 <tr>
@@ -81,6 +93,7 @@
             </table>
             </fieldset>
         </form>
+    </section>
     </body>
 
 </html>
