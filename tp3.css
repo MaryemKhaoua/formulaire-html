@@ -6,14 +6,16 @@ body{
     margin: 0;
     background-image: url(./3.png);
     background-size: cover;
+    background-repeat: none;
 }
 section{
     height: 600px;
+    width: 600px;
     font-weight: bolder;
-    color: rgb(36, 2, 5);
-    display: flex;
+    color: #181D31;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 }
 input{
     margin: 10px auto;
@@ -23,6 +25,10 @@ input{
     box-sizing: border-box;
     border-radius: 8px;
 }
-button[type="submit"]{
+button[type="button"]{
     background-color: rgb(64, 243, 41);
+}
+#DT{
+    text-align: center;
+    color: rgb(6, 13, 104);
 }

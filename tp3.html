@@ -9,85 +9,96 @@
     </head>
     <body>
         <section>
+            <p id="DT"></p>
+                <input type="button" value="Cliquer pour voir la date" onclick="affichedate()">
         <form> 
             <fieldset> 
                 
                 <legend><b>INSCRIPTION</b></legend>
+                
                 <table>
                     <tr>
                         <td><label>Nom</label><span>⁎</span></td>
-                        <td><input type="text" name="nom"></td>
+                        <td><input  id ="name" type="text" name="nom"></td>
+                        <td> <p id="A"></p></td>
                     </tr>
     
                 <tr>
                     
-                    <td> <label> Prénom </label><span> *</span></td>
-                        <td><input type="text" name="prenom"></td>
+                        <td> <label> Prénom </label><span> *</span></td>
+                        <td><input id ="prenom" type="text" name="prenom"></td>
+                        <td> <p id="A1"></p></td>
                     
                 </tr>
                 <tr>
                     
                     <td> <label> Date de naissance </label><span> *</span></td>
-                        <td><input type="jour" name="jour" size="3" placeholder="jj">
-                            <input type="mois" name="mois" size="3" placeholder="mm">
-                            <input type="année" name="année" size="3" placeholder="aaaa">
-                        
-                        </td>
+                        <td><input id ="age" type="date" name="date"></td>
+                        <td> <p id="A2"></p></td>
                     
                 </tr>
                 <tr>
                     
                     <td>  <label> Code Postal </label><span> *</span></td>
-                    <td>  <input type="code" name="codeP"></td>
+                    <td>  <input id ="code" type="code" name="codeP"></td>
+                    <td> <p id="A3"></p></td>
                 
                 </tr>
                 <tr>
                     
                     <td>  <label>Pays</label><span> *</span></td>
-                        <td>  <select>
+                        <td>  <select id="paays">
                             <option>choisir votre pays</option>
                             <option>Maroc</option>
                             <option>USA</option>
                             <option>France</option> 
                         </select></td>
+                        <td> <p id="A4"></p></td>
                     
                 </tr>
                 <tr>
                     <td><label for="">Gener</label><span> ⁎</span></td>
-                    <td><input type="radio"><label>Masculin</label>
-                        <input type="radio" ><label>Féminin</label>
+                    <td><input name="gnr" type="radio">Masculin
+                        <input name="gnr" type="radio" >Féminin
                     </td>
+                    <td> <p id="A5"></p></td>
                 </tr>
 
                 <tr>
                     
                     <td><label>Préférences de contact</label><span> *</span></td>
-                        <td>  <label><input type="checkbox">Fax</label>
-                        <label><input type="checkbox">Email</label>
-                        <label><input type="checkbox">Thélephone</label></td>
+                        <td> 
+                            <input name="cnt" type="checkbox">Fax
+                            <input name="cnt" type="checkbox">Email
+                            <input name="cnt" type="checkbox">Thélephone
+                        </td>
+                        <td> <p id="A6"></p></td>
                     
                 </tr>
                 <tr>
                     
                     <td> <label>Email</label><span> *</span></td>
-                        <td><input type="email"></td>
+                        <td><input id ="email" type="email" name="email"></td>
+                        <td> <p id="A7"></p></td>
                     
                 </tr>
                 <tr>
                     
                     <td>  <label>Passeword(6-8 characters)</label><span> *</span> </td>
-                        <td>  <input type="password"> </td>
+                        <td>  <input id ="passwrd" type="password" name="password"> </td>
+                        <td> <p id="A8"></p></td>
                    
                 </tr>
                 <tr>
                     
                     <td>  <label>Verification password</label><span> *</span></td>
-                        <td>  <input type="password"></td>
+                        <td>  <input id ="vpasswrd" type="password" name="password"></td>
+                        <td> <p id="A9"></p></td>
                     
                 </tr>
                 <tr>
                     <td></td>
-                    <td><button type="submit">Envoyer</button>
+                    <td><button type="button" onclick="verif()">Envoyer</button>
                         <button type="reset">Effacer</button></td>
                 </tr>  
             </table>
