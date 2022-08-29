@@ -78,7 +78,7 @@ function pays()
 {
   let B4=document.getElementById('A4');
   let select=document.getElementById('paays');
-  if(select.value="")
+  if(select.value=="")
   {
     B4.innerText="Choisir votre pays"
     B4.style.color="red"
@@ -95,14 +95,16 @@ function genre()
 {
   let genre= document.querySelector('input[name ="gnr"]:checked');
   let B5=document.getElementById('A5');
-if(genre = null){  
-  B5.innerText="Choisir votre genre"
-  B5.style.color="red"
-return false;
-} else {
-  B5.innerText="VALID"
+if(genre != null){ 
+    B5.innerText="VALID"
   B5.style.color="green"
-  return true;
+  return true; 
+ 
+} 
+else {
+    B5.innerText="Choisir votre genre"
+    B5.style.color="red"
+    return false;
 }
 }
 function contac()
@@ -110,14 +112,16 @@ function contac()
  let  contact = document.querySelector('input[name = "cnt"]:checked');
   let B6=document.getElementById('A6');
 
-if(contact= null){  
-  B6.innerText="Choisir preference de contact"
-  B6.style.color="red"
-  return false;
-} else {
+if(contact != null){  
+  
   B6.innerText="VALID"
   B6.style.color="green"
 return true;
+}
+ else {
+    B6.innerText="Choisir preference de contact"
+    B6.style.color="red"
+    return false;
 }
 }
 function email()
